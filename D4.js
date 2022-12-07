@@ -145,7 +145,7 @@ const eyeColor = {
   blue_gray: [],
 };
 
-/* console.log(eyeColor.blue); */
+/* console.log(eyeColor); */
 
 /* ESERCIZIO 5
   Inserisci l'oggetto dei personaggi in "starWarsCharacters" nell'array corrispondente al colore dei loro occhi nell'oggetto "eyeColor" precedentemente creato.
@@ -226,13 +226,6 @@ Una volta fatto, modifica la massa di qualche elemento dell'equipaggio e vedi se
 
 Usa un for loop per cambiare il valore della proprietà "gender" di alcuni personaggi dal valore "n/a" a "robot" (Tip: puoi creare un nuovo array, o tentare la riassegnazione del valore corrispondente)
 */
-
-/* for (let i = 0; i < starWarsCharacters.length; i++) {
-  if (starWarsCharacters[i].gender === "female") {
-    femaleCharacters.push(starWarsCharacters[i]);
-  }
-} */
-
 for (let i = 0; i < starWarsCharacters.length; i++) {
   console.log(starWarsCharacters[i].gender);
   if (starWarsCharacters[i].gender === "n/a") {
