@@ -183,7 +183,7 @@ while (i < starWarsCharacters.length) {
   tot_mass = tot_mass + Number(starWarsCharacters[i].mass);
   i++;
 }
-console.log(tot_mass);
+/* console.log(tot_mass); */
 
 /* ESERCIZIO 7
 
@@ -199,7 +199,7 @@ Se la massa è superiore a 1000 stampa in console: "DANGER! OVERLOAD ALERT: Jump
 Una volta fatto, modifica la massa di qualche elemento dell'equipaggio e vedi se riesci ad ottenere un messaggio diverso.
 */
 
-switch (true) {
+/* switch (true) {
   case tot_mass >= 1000:
     console.log("DANGER! OVERLOAD ALERT: Abandon ship now!");
     break;
@@ -220,12 +220,26 @@ switch (true) {
     break;
   default:
     console.log("Questo messaggio non dovrebbe spuntare");
-}
+} */
 
 /* ESERCIZIO 8
 
 Usa un for loop per cambiare il valore della proprietà "gender" di alcuni personaggi dal valore "n/a" a "robot" (Tip: puoi creare un nuovo array, o tentare la riassegnazione del valore corrispondente)
 */
+
+/* for (let i = 0; i < starWarsCharacters.length; i++) {
+  if (starWarsCharacters[i].gender === "female") {
+    femaleCharacters.push(starWarsCharacters[i]);
+  }
+} */
+
+for (let i = 0; i < starWarsCharacters.length; i++) {
+  console.log(starWarsCharacters[i].gender);
+  if (starWarsCharacters[i].gender === "n/a") {
+    starWarsCharacters.push("robot");
+  }
+}
+/* console.log(starWarsCharacters.gender); */
 
 /* EXTRA ESERCIZIO 9
 
